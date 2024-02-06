@@ -7,7 +7,7 @@
 ## How to use?
 
 ```bash
-pnpm install valibot fastify-type-provider-valibot
+pnpm install fastify-type-provider-valibot valibot
 ```
 
 ```js
