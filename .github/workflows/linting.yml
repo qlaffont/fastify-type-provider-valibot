@@ -27,7 +27,7 @@ jobs:
           version: 6.0.2
 
       - name: Install deps and build (with cache)
-        run: pnpm install valibot fastify
+        run: pnpm install valibot fastify ajv
 
       - name: Lint
         run: pnpm lint
