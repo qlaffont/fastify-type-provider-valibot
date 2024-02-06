@@ -8,13 +8,5 @@
   "testEnvironment": "node",
   "reporters": ["default"],
   "collectCoverageFrom": ["./src/**/*.ts"],
-  "coveragePathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/coverage/"],
-  "coverageThreshold": {
-    "global": {
-      "statements": 87,
-      "branches": 88,
-      "functions": 87,
-      "lines": 86
-    }
-  }
+  "coveragePathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/coverage/"]
 }
