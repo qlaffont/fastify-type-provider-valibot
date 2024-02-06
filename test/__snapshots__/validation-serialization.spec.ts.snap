@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fastify Type Provider Valibot Validation should be able to tell that validation is required 1`] = `
+{
+  "code": "FST_ERR_VALIDATION",
+  "error": "Bad Request",
+  "message": "Invalid type: Expected string but received undefined",
+  "statusCode": 400,
+}
+`;
+
+exports[`Fastify Type Provider Valibot Validation should be able to tell that validation need to have a number 1`] = `
+{
+  "code": "FST_ERR_VALIDATION",
+  "error": "Bad Request",
+  "message": "Invalid type: Expected number but received "foo"",
+  "statusCode": 400,
+}
+`;

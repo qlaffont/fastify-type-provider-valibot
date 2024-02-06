@@ -1,0 +1,64 @@
+{
+  "name": "fastify-type-provider-valibot",
+  "version": "1.0.0",
+  "description": "Valibot Type Provider for Fastify@4",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && npm run typescript && jest",
+    "test:coverage": "jest --coverage",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "typescript": "tsd",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "fastify": "^4.0.0",
+    "valibot": "^0.28.0",
+    "ajv": "^8.12.0"
+  },
+  "repository": {
+    "url": "https://github.com/qlaffont/fastify-type-provider-valibot"
+  },
+  "keywords": [
+    "fastify",
+    "ajv",
+    "type",
+    "provider"
+  ],
+  "author": "turkerd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qlaffont/fastify-type-provider-valibot/issues"
+  },
+  "homepage": "https://github.com/qlaffont/fastify-type-provider-valibot",
+  "dependencies": {
+    "@gcornut/valibot-json-schema": "^0.0.22"
+  },
+  "devDependencies": {
+    "@fastify/swagger": "^8.14.0",
+    "@fastify/swagger-ui": "^2.1.0",
+    "@types/jest": "^29.5.10",
+    "@types/node": "^18.18.13",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "fastify": "^4.26.0",
+    "graphql": "^16.8.1",
+    "jest": "^29.7.0",
+    "mercurius": "^13.3.3",
+    "oas-validator": "^5.0.8",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.1.1",
+    "tsd": "^0.29.0",
+    "typescript": "^5.3.2"
+  },
+  "tsd": {
+    "directory": "types"
+  }
+}
