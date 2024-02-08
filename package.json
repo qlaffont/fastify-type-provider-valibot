@@ -1,6 +1,6 @@
 {
   "name": "fastify-type-provider-valibot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Valibot Type Provider for Fastify@4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/qlaffont/fastify-type-provider-valibot",
   "dependencies": {
-    "@gcornut/valibot-json-schema": "^0.0.22"
+    "@gcornut/valibot-json-schema": "^0.0.23"
   },
   "devDependencies": {
     "@fastify/swagger": "^8.14.0",

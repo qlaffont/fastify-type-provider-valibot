@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import type { ToJSONSchemaOptions } from '@gcornut/valibot-json-schema';
 import { toJSONSchema } from '@gcornut/valibot-json-schema';
 import type Ajv from 'ajv';
 import type { FastifySchema, FastifySchemaCompiler, FastifyTypeProvider } from 'fastify';
@@ -21,6 +22,10 @@ const defaultSkipList = [
 export interface ValibotTypeProvider extends FastifyTypeProvider {
   output: this['input'] extends BaseSchema ? Input<this['input']> : never;
 }
+
+const toJSONSchemaOptions: ToJSONSchemaOptions = {
+  undefinedStrategy: 'any',
+};
 
 interface Schema extends FastifySchema {
   hide?: boolean;
@@ -50,7 +55,7 @@ export const createJsonSchemaTransform = ({ skipList }: { skipList: readonly str
       const valibotSchema = valibotSchemas[prop];
 
       if (valibotSchema && valibotSchema.type && !valibotSchema.properties) {
-        transformed[prop] = toJSONSchema({ schema: valibotSchema });
+        transformed[prop] = toJSONSchema({ schema: valibotSchema, ...toJSONSchemaOptions });
       }
     }
 
@@ -62,7 +67,7 @@ export const createJsonSchemaTransform = ({ skipList }: { skipList: readonly str
 
         //@ts-ignore
         if (schema && schema.type && !schema.properties) {
-          const transformedResponse = toJSONSchema({ schema: schema });
+          const transformedResponse = toJSONSchema({ schema: schema, ...toJSONSchemaOptions });
           transformed.response[prop] = transformedResponse;
         }
       }
