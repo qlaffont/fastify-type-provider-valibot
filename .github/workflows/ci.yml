@@ -48,7 +48,7 @@ jobs:
 
       - name: Install deps and build (with cache)
         if: steps.changes.outputs.src == 'true'
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install --no-frozen-lockfile && pnpm install valibot fastify ajv
 
       - name: Lint
         if: steps.changes.outputs.src == 'true'
