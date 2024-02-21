@@ -16,7 +16,7 @@
   },
   "peerDependencies": {
     "fastify": "^4.0.0",
-    "valibot": "^0.28.0 || ^0.29.0",
+    "valibot": "^0.29.0",
     "ajv": "^8.12.0"
   },
   "repository": {

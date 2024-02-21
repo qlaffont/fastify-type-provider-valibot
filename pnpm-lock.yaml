@@ -7,13 +7,13 @@ settings:
 dependencies:
   '@gcornut/valibot-json-schema':
     specifier: ^0.0.24
-    version: 0.0.24(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(valibot@0.28.0)
+    version: 0.0.24(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(valibot@0.29.0)
   ajv:
     specifier: ^8.12.0
     version: 8.12.0
   valibot:
-    specifier: ^0.28.0 || ^0.29.0
-    version: 0.28.0
+    specifier: ^0.29.0
+    version: 0.29.0
 
 devDependencies:
   '@fastify/swagger':
@@ -739,7 +739,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@gcornut/valibot-json-schema@0.0.24(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(valibot@0.28.0):
+  /@gcornut/valibot-json-schema@0.0.24(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(valibot@0.29.0):
     resolution: {integrity: sha512-4eOVZm7UV3alJVamo8CU3Uj/trWjbgqe479dIFF7fp+aIuNKkwz2ID48UFS1puGLnkymW9lywyfr2n/mhsvpgQ==}
     hasBin: true
     peerDependencies:
@@ -751,7 +751,7 @@ packages:
       '@types/json-schema': 7.0.15
       esbuild: 0.20.0
       esbuild-runner: 2.2.2(esbuild@0.20.0)
-      valibot: 0.28.0
+      valibot: 0.29.0
     dev: false
 
   /@graphql-typed-document-node/core@3.2.0(graphql@16.8.1):
@@ -5036,8 +5036,8 @@ packages:
       convert-source-map: 2.0.0
     dev: true
 
-  /valibot@0.28.0:
-    resolution: {integrity: sha512-+ADabFSOGEffVmMYltPVK3K1GpbzXGoNSoP9ZbjTVz7wkjVIj6L2NvOu4TaeU2R9s7tyNKihcAeddmrpT6LDzQ==}
+  /valibot@0.29.0:
+    resolution: {integrity: sha512-JhZn08lwZPhAamOCfBwBkv/btQt4KeQhekULPH8crH053zUCLSOGEF2zKExu3bFf245tsj6J1dY0ysd/jUiMIQ==}
     dev: false
 
   /validate-npm-package-license@3.0.4:
