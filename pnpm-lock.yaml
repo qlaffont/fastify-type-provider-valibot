@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@gcornut/valibot-json-schema':
-    specifier: ^0.0.24
-    version: 0.0.24(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(valibot@0.29.0)
+    specifier: ^0.0.25
+    version: 0.0.25(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(valibot@0.29.0)
   ajv:
     specifier: ^8.12.0
     version: 8.12.0
@@ -739,8 +739,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@gcornut/valibot-json-schema@0.0.24(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(valibot@0.29.0):
-    resolution: {integrity: sha512-4eOVZm7UV3alJVamo8CU3Uj/trWjbgqe479dIFF7fp+aIuNKkwz2ID48UFS1puGLnkymW9lywyfr2n/mhsvpgQ==}
+  /@gcornut/valibot-json-schema@0.0.25(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(valibot@0.29.0):
+    resolution: {integrity: sha512-JlOmghA8OMM8B+3lLSWrZqce4FM5SrCO/bmYGZQz3ZYPja/mXhLYa2qEOFUsBaz24prv04un3zXIUpJzgglAkw==}
     hasBin: true
     peerDependencies:
       '@types/json-schema': '>= 7.0.14'
