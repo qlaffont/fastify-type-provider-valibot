@@ -57,7 +57,7 @@ devDependencies:
     version: 29.7.0(@types/node@20.11.28)
   mercurius:
     specifier: ^13.3.3
-    version: 13.4.0(graphql@16.8.1)
+    version: 13.4.1(graphql@16.8.1)
   oas-validator:
     specifier: ^5.0.8
     version: 5.0.8
@@ -2435,6 +2435,18 @@ packages:
       rfdc: 1.3.1
     dev: true
 
+  /fast-json-stringify@5.13.0:
+    resolution: {integrity: sha512-XjTDWKHP3GoMQUOfnjYUbqeHeEt+PvYgvBdG2fRSmYaORILbSr8xTJvZX+w1YSAP5pw2NwKrGRmQleYueZEoxw==}
+    dependencies:
+      '@fastify/merge-json-schemas': 0.1.1
+      ajv: 8.12.0
+      ajv-formats: 2.1.1(ajv@8.12.0)
+      fast-deep-equal: 3.1.3
+      fast-uri: 2.3.0
+      json-schema-ref-resolver: 1.0.1
+      rfdc: 1.3.1
+    dev: true
+
   /fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
     dev: true
@@ -2736,7 +2748,7 @@ packages:
       graphql: '>=15'
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.1)
-      fast-json-stringify: 5.12.0
+      fast-json-stringify: 5.13.0
       generate-function: 2.3.1
       graphql: 16.8.1
       lodash.memoize: 4.1.2
@@ -3745,8 +3757,8 @@ packages:
       yargs-parser: 20.2.9
     dev: true
 
-  /mercurius@13.4.0(graphql@16.8.1):
-    resolution: {integrity: sha512-WNjpBYMRDTpqCs+dLrzZzRIzVJsiBHDCtvJyqnyJRayep9/R1K2mCtaK1HOWL9XLNFXztaJGPpEL8k9WyO1uqQ==}
+  /mercurius@13.4.1(graphql@16.8.1):
+    resolution: {integrity: sha512-fN7nfkuq1iB/S5J4PxG9F4nKeEsdbIUCT2CPdKDEPQUzJ9voXIxM5Zwm086MHEsiBa80mE+pvxgodiVLRgaOGQ==}
     engines: {node: '>=14.19.3'}
     peerDependencies:
       graphql: ^16.0.0
