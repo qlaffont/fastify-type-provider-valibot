@@ -32,11 +32,11 @@ app.withTypeProvider<ValibotTypeProvider>().route({
   url: "/",
   // Define your schema
   schema: {
-    querystring: z.object({
-      name: z.string().min(4),
+    querystring: v.object({
+      name: v.string(),
     }),
     response: {
-      200: z.string(),
+      200: v.undefined_('test'),
     },
   },
   handler: (req, res) => {
@@ -88,9 +88,9 @@ app.register(fastifySwaggerUI, {
   routePrefix: '/documentation',
 });
 
-const LOGIN_SCHEMA = z.object({
-  username: z.string().max(32).describe('Some description for username'),
-  password: z.string().max(32),
+const LOGIN_SCHEMA = v.object({
+  username: v.string(),
+  password: v.string(),
 });
 
 app.after(() => {
