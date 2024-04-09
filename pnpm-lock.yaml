@@ -7,13 +7,13 @@ settings:
 dependencies:
   '@gcornut/valibot-json-schema':
     specifier: ^0.0.27
-    version: 0.0.27(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(valibot@0.29.0)
+    version: 0.0.27(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(valibot@0.30.0)
   ajv:
     specifier: ^8.12.0
     version: 8.12.0
   valibot:
-    specifier: ^0.29.0 || ^0.30.0
-    version: 0.29.0
+    specifier: ^0.30.0
+    version: 0.30.0
 
 devDependencies:
   '@fastify/swagger':
@@ -47,7 +47,7 @@ devDependencies:
     specifier: ^5.1.3
     version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.57.0)(prettier@3.2.5)
   fastify:
-    specifier: ^4.26.0
+    specifier: ^4.26.2
     version: 4.26.2
   graphql:
     specifier: ^16.8.1
@@ -731,7 +731,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@gcornut/valibot-json-schema@0.0.27(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(valibot@0.29.0):
+  /@gcornut/valibot-json-schema@0.0.27(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(valibot@0.30.0):
     resolution: {integrity: sha512-xcMaUStVgQzPrK3d7PuLFbQ+3qSp6LzaLExAm52E3FKmUfjQa7Sw5cDK6Hfu/8WT0yfGsuSCuJ5uT1sosjR9Qg==}
     hasBin: true
     peerDependencies:
@@ -743,7 +743,7 @@ packages:
       '@types/json-schema': 7.0.15
       esbuild: 0.20.2
       esbuild-runner: 2.2.2(esbuild@0.20.2)
-      valibot: 0.29.0
+      valibot: 0.30.0
     dev: false
 
   /@graphql-typed-document-node/core@3.2.0(graphql@16.8.1):
@@ -5060,8 +5060,8 @@ packages:
       convert-source-map: 2.0.0
     dev: true
 
-  /valibot@0.29.0:
-    resolution: {integrity: sha512-JhZn08lwZPhAamOCfBwBkv/btQt4KeQhekULPH8crH053zUCLSOGEF2zKExu3bFf245tsj6J1dY0ysd/jUiMIQ==}
+  /valibot@0.30.0:
+    resolution: {integrity: sha512-5POBdbSkM+3nvJ6ZlyQHsggisfRtyT4tVTo1EIIShs6qCdXJnyWU5TJ68vr8iTg5zpOLjXLRiBqNx+9zwZz/rA==}
     dev: false
 
   /validate-npm-package-license@3.0.4:
