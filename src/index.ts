@@ -23,7 +23,7 @@ export interface ValibotTypeProvider extends FastifyTypeProvider {
   output: this['input'] extends BaseSchema ? Input<this['input']> : never;
 }
 
-const toJSONSchemaOptions: ToJSONSchemaOptions = {
+const defaultToJSONSchemaOptions: ToJSONSchemaOptions = {
   undefinedStrategy: 'any',
 };
 
@@ -31,7 +31,13 @@ interface Schema extends FastifySchema {
   hide?: boolean;
 }
 
-export const createJsonSchemaTransform = ({ skipList }: { skipList: readonly string[] }) => {
+export const createJsonSchemaTransform = ({
+  skipList,
+  ...opts
+}: {
+  skipList: readonly string[];
+  toJSONSchemaOptions?: ToJSONSchemaOptions;
+}) => {
   return ({ schema, url }: { schema: Schema; url: string }) => {
     if (!schema) {
       return {
@@ -39,6 +45,8 @@ export const createJsonSchemaTransform = ({ skipList }: { skipList: readonly str
         url,
       };
     }
+
+    const toJSONSchemaOptions = opts.toJSONSchemaOptions || defaultToJSONSchemaOptions;
 
     const { response, headers, querystring, body, params, hide, ...rest } = schema;
 

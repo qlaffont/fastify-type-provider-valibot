@@ -82,6 +82,11 @@ app.register(fastifySwagger, {
   // transform: createJsonSchemaTransform({
   //   skipList: [ '/documentation/static/*' ]
   // })
+  // and you can override default ToJSONSchema options : https://github.com/gcornut/valibot-json-schema/blob/main/src/toJSONSchema/types.ts#L25
+  //
+  // transform: createJsonSchemaTransform({
+  //   toJSONSchemaOptions: { ignoreUnknownValidation: true }
+  // })
 });
 
 app.register(fastifySwaggerUI, {
