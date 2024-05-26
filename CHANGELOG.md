@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.1.14 (2024-05-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ajv to v8.14.0 ([b21a9c4](https://github.com/qlaffont/fastify-type-provider-valibot/commit/b21a9c428a1d2542cd6fb369b186d7e82e286030))
+
 ### 1.1.13 (2024-05-22)
 
 ### 1.1.12 (2024-05-21)
