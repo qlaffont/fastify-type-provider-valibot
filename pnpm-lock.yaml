@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@gcornut/valibot-json-schema':
-        specifier: ^0.0.28
-        version: 0.0.28(@types/json-schema@7.0.15)(esbuild-runner@2.2.2(esbuild@0.20.2))(esbuild@0.20.2)(valibot@0.30.0)
+        specifier: ^0.0.29
+        version: 0.0.29
       ajv:
         specifier: ^8.14.0
         version: 8.14.0
@@ -450,14 +450,9 @@ packages:
   '@fastify/websocket@10.0.1':
     resolution: {integrity: sha512-8/pQIxTPRD8U94aILTeJ+2O3el/r19+Ej5z1O1mXlqplsUH7KzCjAI0sgd5DM/NoPjAi5qLFNIjgM5+9/rGSNw==}
 
-  '@gcornut/valibot-json-schema@0.0.28':
-    resolution: {integrity: sha512-z2iMV1hnLlTf8PlFHCNERVHJCb6sdcbFYmfh4ydnh3slJb0GlxsQ/PIwNL2yAr8NkZI+MGvcgJ4l3s5bt3bUBg==}
+  '@gcornut/valibot-json-schema@0.0.29':
+    resolution: {integrity: sha512-fmoV+kc4vTn8baiyHMg+SxmDywXNbLbydM0Q8WsjQ4slQuVIrAqO8s3f1PqoXdzgAJoaYPyvdQmTTXceNxNZ5w==}
     hasBin: true
-    peerDependencies:
-      '@types/json-schema': '>= 7.0.14'
-      esbuild: '>= 0.18.20'
-      esbuild-runner: '>= 2.2.2'
-      valibot: '>= 0.21.0'
 
   '@graphql-typed-document-node/core@3.2.0':
     resolution: {integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==}
@@ -3135,12 +3130,13 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@gcornut/valibot-json-schema@0.0.28(@types/json-schema@7.0.15)(esbuild-runner@2.2.2(esbuild@0.20.2))(esbuild@0.20.2)(valibot@0.30.0)':
+  '@gcornut/valibot-json-schema@0.0.29':
     dependencies:
+      valibot: 0.30.0
+    optionalDependencies:
       '@types/json-schema': 7.0.15
       esbuild: 0.20.2
       esbuild-runner: 2.2.2(esbuild@0.20.2)
-      valibot: 0.30.0
 
   '@graphql-typed-document-node/core@3.2.0(graphql@16.8.1)':
     dependencies:
@@ -3995,6 +3991,7 @@ snapshots:
       esbuild: 0.20.2
       source-map-support: 0.5.21
       tslib: 2.4.0
+    optional: true
 
   esbuild@0.20.2:
     optionalDependencies:
@@ -4021,6 +4018,7 @@ snapshots:
       '@esbuild/win32-arm64': 0.20.2
       '@esbuild/win32-ia32': 0.20.2
       '@esbuild/win32-x64': 0.20.2
+    optional: true
 
   escalade@3.1.1: {}
 
@@ -5561,6 +5559,7 @@ snapshots:
     dependencies:
       buffer-from: 1.1.2
       source-map: 0.6.1
+    optional: true
 
   source-map@0.6.1: {}
 
@@ -5741,7 +5740,8 @@ snapshots:
       path-exists: 4.0.0
       read-pkg-up: 7.0.1
 
-  tslib@2.4.0: {}
+  tslib@2.4.0:
+    optional: true
 
   tslib@2.6.2: {}
 
