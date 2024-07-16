@@ -17,7 +17,7 @@
   "peerDependencies": {
     "ajv": "^8.12.0",
     "fastify": "^4.0.0",
-    "valibot": "^0.29.0 || ^0.30.0"
+    "valibot": "^0.30.0"
   },
   "repository": {
     "url": "https://github.com/qlaffont/fastify-type-provider-valibot"
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/qlaffont/fastify-type-provider-valibot",
   "dependencies": {
-    "@gcornut/valibot-json-schema": "^0.0.29",
+    "@gcornut/valibot-json-schema": "^0.31.0",
     "ajv": "^8.17.1",
     "valibot": "^0.30.0"
   },

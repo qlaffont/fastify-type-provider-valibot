@@ -75,6 +75,7 @@ export const createJsonSchemaTransform = ({
 
         //@ts-ignore
         if (schema && schema.type && !schema.properties) {
+          //@ts-ignore
           const transformedResponse = toJSONSchema({ schema: schema, ...toJSONSchemaOptions });
           transformed.response[prop] = transformedResponse;
         }

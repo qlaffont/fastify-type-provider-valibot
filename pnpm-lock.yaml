@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@gcornut/valibot-json-schema':
-        specifier: ^0.0.29
-        version: 0.0.29
+        specifier: ^0.31.0
+        version: 0.31.0
       ajv:
         specifier: ^8.17.1
         version: 8.17.1
@@ -466,8 +466,8 @@ packages:
   '@fastify/websocket@10.0.1':
     resolution: {integrity: sha512-8/pQIxTPRD8U94aILTeJ+2O3el/r19+Ej5z1O1mXlqplsUH7KzCjAI0sgd5DM/NoPjAi5qLFNIjgM5+9/rGSNw==}
 
-  '@gcornut/valibot-json-schema@0.0.29':
-    resolution: {integrity: sha512-fmoV+kc4vTn8baiyHMg+SxmDywXNbLbydM0Q8WsjQ4slQuVIrAqO8s3f1PqoXdzgAJoaYPyvdQmTTXceNxNZ5w==}
+  '@gcornut/valibot-json-schema@0.31.0':
+    resolution: {integrity: sha512-3xGptCurm23e7nuPQkdrE5rEs1FeTPHhAUsBuwwqG4/YeZLwJOoYZv+fmsppUEfo5y9lzUwNQrNqLS/q7HMc7g==}
     hasBin: true
 
   '@graphql-typed-document-node/core@3.2.0':
@@ -2745,6 +2745,9 @@ packages:
   valibot@0.30.0:
     resolution: {integrity: sha512-5POBdbSkM+3nvJ6ZlyQHsggisfRtyT4tVTo1EIIShs6qCdXJnyWU5TJ68vr8iTg5zpOLjXLRiBqNx+9zwZz/rA==}
 
+  valibot@0.31.1:
+    resolution: {integrity: sha512-2YYIhPrnVSz/gfT2/iXVTrSj92HwchCt9Cga/6hX4B26iCz9zkIsGTS0HjDYTZfTi1Un0X6aRvhBi1cfqs/i0Q==}
+
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
@@ -3224,9 +3227,9 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@gcornut/valibot-json-schema@0.0.29':
+  '@gcornut/valibot-json-schema@0.31.0':
     dependencies:
-      valibot: 0.30.0
+      valibot: 0.31.1
     optionalDependencies:
       '@types/json-schema': 7.0.15
       esbuild: 0.20.2
@@ -5964,6 +5967,8 @@ snapshots:
       convert-source-map: 2.0.0
 
   valibot@0.30.0: {}
+
+  valibot@0.31.1: {}
 
   validate-npm-package-license@3.0.4:
     dependencies:
