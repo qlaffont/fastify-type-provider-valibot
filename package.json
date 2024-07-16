@@ -37,7 +37,7 @@
   "dependencies": {
     "@gcornut/valibot-json-schema": "^0.31.0",
     "ajv": "^8.17.1",
-    "valibot": "^0.30.0"
+    "valibot": "^0.36.0"
   },
   "devDependencies": {
     "@fastify/swagger": "^8.14.0",
