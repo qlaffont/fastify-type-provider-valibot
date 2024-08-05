@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@gcornut/valibot-json-schema':
-        specifier: ^0.36.0
-        version: 0.36.0(esbuild@0.20.2)
+        specifier: ^0.37.0
+        version: 0.37.0(esbuild@0.20.2)(typescript@5.5.3)
       ajv:
         specifier: ^8.17.1
         version: 8.17.1
@@ -466,8 +466,8 @@ packages:
   '@fastify/websocket@10.0.1':
     resolution: {integrity: sha512-8/pQIxTPRD8U94aILTeJ+2O3el/r19+Ej5z1O1mXlqplsUH7KzCjAI0sgd5DM/NoPjAi5qLFNIjgM5+9/rGSNw==}
 
-  '@gcornut/valibot-json-schema@0.36.0':
-    resolution: {integrity: sha512-Zs51ylo1Torfy7Jn4jVG3RHp9KYIe82dWl14EliLa76gQslir25xkk6IuLAPAcTgWrB3cvTYZb08SyMF5juo8g==}
+  '@gcornut/valibot-json-schema@0.37.0':
+    resolution: {integrity: sha512-xZD14mlV+RgQfK8tqlrlpApblE1r/6zM1UCfovVr11Rk4YXbVqAzmv/9QNqcgYjvidyGfwfo1k2HmFUk+1PvhQ==}
     hasBin: true
 
   '@graphql-typed-document-node/core@3.2.0':
@@ -2743,8 +2743,13 @@ packages:
   valibot@0.30.0:
     resolution: {integrity: sha512-5POBdbSkM+3nvJ6ZlyQHsggisfRtyT4tVTo1EIIShs6qCdXJnyWU5TJ68vr8iTg5zpOLjXLRiBqNx+9zwZz/rA==}
 
-  valibot@0.36.0:
-    resolution: {integrity: sha512-CjF1XN4sUce8sBK9TixrDqFM7RwNkuXdJu174/AwmQUB62QbCQADg5lLe8ldBalFgtj1uKj+pKwDJiNo4Mn+eQ==}
+  valibot@0.37.0:
+    resolution: {integrity: sha512-FQz52I8RXgFgOHym3XHYSREbNtkgSjF9prvMFH1nBsRyfL6SfCzoT1GuSDTlbsuPubM7/6Kbw0ZMQb8A+V+VsQ==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
@@ -3221,14 +3226,15 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@gcornut/valibot-json-schema@0.36.0(esbuild@0.20.2)':
+  '@gcornut/valibot-json-schema@0.37.0(esbuild@0.20.2)(typescript@5.5.3)':
     dependencies:
-      valibot: 0.36.0
+      valibot: 0.37.0(typescript@5.5.3)
     optionalDependencies:
       '@types/json-schema': 7.0.15
       esbuild-runner: 2.2.2(esbuild@0.20.2)
     transitivePeerDependencies:
       - esbuild
+      - typescript
 
   '@graphql-typed-document-node/core@3.2.0(graphql@16.9.0)':
     dependencies:
@@ -5965,7 +5971,9 @@ snapshots:
 
   valibot@0.30.0: {}
 
-  valibot@0.36.0: {}
+  valibot@0.37.0(typescript@5.5.3):
+    optionalDependencies:
+      typescript: 5.5.3
 
   validate-npm-package-license@3.0.4:
     dependencies:

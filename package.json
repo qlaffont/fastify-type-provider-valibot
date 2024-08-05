@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/qlaffont/fastify-type-provider-valibot",
   "dependencies": {
-    "@gcornut/valibot-json-schema": "^0.36.0",
+    "@gcornut/valibot-json-schema": "^0.37.0",
     "ajv": "^8.17.1",
     "valibot": "^0.30.0"
   },
