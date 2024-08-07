@@ -15,8 +15,8 @@ importers:
         specifier: ^8.17.1
         version: 8.17.1
       valibot:
-        specifier: ^0.30.0
-        version: 0.30.0
+        specifier: ^0.37.0
+        version: 0.37.0(typescript@5.5.3)
     devDependencies:
       '@fastify/swagger':
         specifier: ^8.14.0
@@ -2739,9 +2739,6 @@ packages:
   v8-to-istanbul@9.2.0:
     resolution: {integrity: sha512-/EH/sDgxU2eGxajKdwLCDmQ4FWq+kpi3uCmBGpw1xJtnAxEjlD8j8PEiGWpCIMIs3ciNAgH0d3TTJiUkYzyZjA==}
     engines: {node: '>=10.12.0'}
-
-  valibot@0.30.0:
-    resolution: {integrity: sha512-5POBdbSkM+3nvJ6ZlyQHsggisfRtyT4tVTo1EIIShs6qCdXJnyWU5TJ68vr8iTg5zpOLjXLRiBqNx+9zwZz/rA==}
 
   valibot@0.37.0:
     resolution: {integrity: sha512-FQz52I8RXgFgOHym3XHYSREbNtkgSjF9prvMFH1nBsRyfL6SfCzoT1GuSDTlbsuPubM7/6Kbw0ZMQb8A+V+VsQ==}
@@ -5968,8 +5965,6 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.20
       '@types/istanbul-lib-coverage': 2.0.6
       convert-source-map: 2.0.0
-
-  valibot@0.30.0: {}
 
   valibot@0.37.0(typescript@5.5.3):
     optionalDependencies:
