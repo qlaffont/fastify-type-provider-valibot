@@ -23,7 +23,7 @@ importers:
         version: 8.15.0
       '@fastify/swagger-ui':
         specifier: ^4.0.0
-        version: 4.0.1
+        version: 4.1.0
       '@types/jest':
         specifier: ^29.5.10
         version: 29.5.12
@@ -457,8 +457,8 @@ packages:
   '@fastify/static@7.0.4':
     resolution: {integrity: sha512-p2uKtaf8BMOZWLs6wu+Ihg7bWNBdjNgCwDza4MJtTqg+5ovKmcbgbR9Xs5/smZ1YISfzKOCNYmZV8LaCj+eJ1Q==}
 
-  '@fastify/swagger-ui@4.0.1':
-    resolution: {integrity: sha512-gG+T6ThV+uatmn5HsLA5TTnf6zOW5Ya+v7z9rFKQIclnJFK3rhgg4iIwEEi+kV6h8f32pj1kmBqD8ZeDefnd1Q==}
+  '@fastify/swagger-ui@4.1.0':
+    resolution: {integrity: sha512-Bqsd6VFQR7WoT6eRammOF8/gXf5GKywq2zYy8/3fj2rsZw43cmXdfsEKxVAmAwOW2Nv+dnyQaf5qM6kBqyXRlw==}
 
   '@fastify/swagger@8.15.0':
     resolution: {integrity: sha512-zy+HEEKFqPMS2sFUsQU5X0MHplhKJvWeohBwTCkBAJA/GDYGLGUWQaETEhptiqxK7Hs0fQB9B4MDb3pbwIiCwA==}
@@ -1395,8 +1395,8 @@ packages:
     resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
     engines: {node: '>=14'}
 
-  foreground-child@3.2.1:
-    resolution: {integrity: sha512-PXUUyLqrR2XCWICfv6ukppP96sdFwWbNEnfEMt7jNsISjMsvaLNinAHNDYyvkyU+SZG2BTSbT5NjG+vZslfGTA==}
+  foreground-child@3.3.0:
+    resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
     engines: {node: '>=14'}
 
   forwarded@0.2.0:
@@ -2819,6 +2819,11 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
 
+  yaml@2.5.0:
+    resolution: {integrity: sha512-2wWLbGbYDiSqqIKoPjar3MPgB94ErzCtrNE1FdqGuaO0pi2JGjmE8aW8TDZwzU7vuxcGRdL/4gPQwQ7hD5AMSw==}
+    engines: {node: '>= 14'}
+    hasBin: true
+
   yargs-parser@20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
@@ -3199,13 +3204,13 @@ snapshots:
       fastq: 1.17.1
       glob: 10.4.5
 
-  '@fastify/swagger-ui@4.0.1':
+  '@fastify/swagger-ui@4.1.0':
     dependencies:
       '@fastify/static': 7.0.4
       fastify-plugin: 4.5.1
       openapi-types: 12.1.3
       rfdc: 1.4.1
-      yaml: 2.4.5
+      yaml: 2.5.0
 
   '@fastify/swagger@8.15.0':
     dependencies:
@@ -4428,7 +4433,7 @@ snapshots:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
 
-  foreground-child@3.2.1:
+  foreground-child@3.3.0:
     dependencies:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
@@ -4493,7 +4498,7 @@ snapshots:
 
   glob@10.4.5:
     dependencies:
-      foreground-child: 3.2.1
+      foreground-child: 3.3.0
       jackspeak: 3.4.3
       minimatch: 9.0.5
       minipass: 7.1.2
@@ -6036,6 +6041,8 @@ snapshots:
   yaml@1.10.2: {}
 
   yaml@2.4.5: {}
+
+  yaml@2.5.0: {}
 
   yargs-parser@20.2.9: {}
 
