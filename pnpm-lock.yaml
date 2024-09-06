@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@gcornut/valibot-json-schema':
         specifier: ^0.41.0
-        version: 0.41.0(esbuild@0.20.2)(typescript@5.5.3)
+        version: 0.41.1(esbuild@0.20.2)(typescript@5.5.3)
       ajv:
         specifier: ^8.17.1
         version: 8.17.1
@@ -466,8 +466,8 @@ packages:
   '@fastify/websocket@10.0.1':
     resolution: {integrity: sha512-8/pQIxTPRD8U94aILTeJ+2O3el/r19+Ej5z1O1mXlqplsUH7KzCjAI0sgd5DM/NoPjAi5qLFNIjgM5+9/rGSNw==}
 
-  '@gcornut/valibot-json-schema@0.41.0':
-    resolution: {integrity: sha512-Luk1ni3Q2+PlKsl84Qo0qlLdgpoicZEEuRPY/foicTJ3Q0izPBsqQ+RUCqZZykTk1kYg1k5xpMMc4WhslJtquw==}
+  '@gcornut/valibot-json-schema@0.41.1':
+    resolution: {integrity: sha512-wrMSbzfBK7tiej89z8xZf0Gu0gJXCQHsx9yf4E0qFULXptP8/oSsAjUYgqV+jNA6/v0I4+eLb7KssVLbVSiWmw==}
     hasBin: true
 
   '@graphql-typed-document-node/core@3.2.0':
@@ -3248,7 +3248,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@gcornut/valibot-json-schema@0.41.0(esbuild@0.20.2)(typescript@5.5.3)':
+  '@gcornut/valibot-json-schema@0.41.1(esbuild@0.20.2)(typescript@5.5.3)':
     dependencies:
       valibot: 0.41.0(typescript@5.5.3)
     optionalDependencies:
