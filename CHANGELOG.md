@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.1.78 (2024-09-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gcornut/valibot-json-schema to ^0.42.0 ([8710dfb](https://github.com/qlaffont/fastify-type-provider-valibot/commit/8710dfb848d5d52e2f71673bcb9208cb97e8e989))
+
 ### 1.1.77 (2024-09-12)
 
 ### 1.1.76 (2024-09-09)
