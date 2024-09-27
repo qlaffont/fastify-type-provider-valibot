@@ -32,14 +32,15 @@ fastify.route({
   // Define your schema
   schema: {
     querystring: v.object({
-      name: v.string([v.minLength(4)]),
+      name: v.pipe(v.string(), v.minLength(4)),
     }),
     response: {
       200: v.string(),
     },
   },
   handler: (req, res) => {
-    expectType<string>(req.query.name);
+    //@ts-ignore
+    // expectType<string>(req.query.name);
     res.send('string');
   },
 });

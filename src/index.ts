@@ -5,7 +5,7 @@ import type Ajv from 'ajv';
 import type { FastifySchema, FastifySchemaCompiler, FastifyTypeProvider } from 'fastify';
 import type { FastifySerializerCompiler, FastifyValidationResult } from 'fastify/types/schema';
 import { safeParse, parse } from 'valibot';
-import type { BaseSchema, Input, AnySchema } from 'valibot';
+import type { BaseSchema, InferInput, AnySchema } from 'valibot';
 
 type FreeformRecord = Record<string, any>;
 
@@ -19,9 +19,7 @@ const defaultSkipList = [
   '/documentation/static/*',
 ];
 
-export interface ValibotTypeProvider extends FastifyTypeProvider {
-  output: this['input'] extends BaseSchema ? Input<this['input']> : never;
-}
+export interface ValibotTypeProvider extends FastifyTypeProvider {};
 
 const defaultToJSONSchemaOptions: ToJSONSchemaOptions = {
   undefinedStrategy: 'any',
@@ -155,7 +153,7 @@ export class ResponseValidationError extends Error {
     this.details = validationResult.error;
   }
 }
-export const serializerCompiler: FastifySerializerCompiler<BaseSchema> = ({
+export const serializerCompiler: FastifySerializerCompiler<unknown> = ({
   schema: maybeSchema,
 }) => {
   const schema = resolveSchema(maybeSchema);
