@@ -53,7 +53,7 @@
     "fastify": "^4.28.1",
     "graphql": "^16.9.0",
     "jest": "^29.7.0",
-    "mercurius": "^14.0.0",
+    "mercurius": "^15.0.0",
     "oas-validator": "^5.0.8",
     "prettier": "^3.3.3",
     "ts-jest": "^29.2.5",
